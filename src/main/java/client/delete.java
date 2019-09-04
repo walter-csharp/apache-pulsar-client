@@ -1,11 +1,11 @@
-package hello;
+package puls;
 import java.util.*;
 import org.apache.pulsar.client.admin.PulsarAdmin;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 
-public class DeleteTopics {
+public class Delete {
   public String deleteAllTopics(String namespace) {
           int i=0;
       try{
