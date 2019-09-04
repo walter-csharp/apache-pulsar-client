@@ -9,7 +9,7 @@ public class Greeter {
   public String sayHello(String namespace) {
           int i=0;
       try{
-          PulsarAdmin admin = PulsarAdmin.builder().serviceHttpUrl("http://13.74.20.87:8080").build();
+          PulsarAdmin admin = PulsarAdmin.builder().serviceHttpUrl("http://0.0.0.0:8080").build();
           //namespace tenant01/namespace01
           System.out.println(namespace);
           List<String> topiclist = admin.topics().getList(namespace);
