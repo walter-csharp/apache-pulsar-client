@@ -1,0 +1,25 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'puls.Start'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    baseName = 'devops-pulsar'
+    version = '0.1.0'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+def pulsarVersion = '2.4.0'
+
+dependencies {
+   compile group: 'org.apache.pulsar', name: 'pulsar-client', version: pulsarVersion
+   compile group: 'org.apache.pulsar', name: 'pulsar-client-admin', version: pulsarVersion
+   compile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: '2.8.2'
+   compile group: 'org.apache.logging.log4j', name: 'log4j-core', version:'2.8.2'
+}
