@@ -5,8 +5,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 
-public class Greeter {
-  public String sayHello(String namespace) {
+public class DeleteTopics {
+  public String deleteAllTopics(String namespace) {
           int i=0;
       try{
           PulsarAdmin admin = PulsarAdmin.builder().serviceHttpUrl("http://0.0.0.0:8080").build();
